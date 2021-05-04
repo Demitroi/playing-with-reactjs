@@ -30,7 +30,7 @@ function App() {
         >
           Learn React
         </a>
-        // Aquí agregue mis componentes
+        {/* Aquí agregue mis componentes */}
         <Cuadrito></Cuadrito>
         <Botoncito></Botoncito>
       </header>
