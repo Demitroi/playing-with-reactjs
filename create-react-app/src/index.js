@@ -1,3 +1,8 @@
+// En este archivo es donde empieza todo, se importa react y sus cosillas
+// Se importa la App que es el componente principal.
+// ReactDOM es para comenzar a renderizar, y le mandamos el App como un componente.
+// Todo eso se hace sobre el elemento raíz que se encuentra en el index.html del public.
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
