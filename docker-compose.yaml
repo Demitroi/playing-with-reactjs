@@ -2,6 +2,12 @@ version: '3.3'
 
 services:
   app1:
+    image: nginx:1.20.0-alpine
+    volumes:
+      - ./basic/:/usr/share/nginx/html
+    ports:
+      - 3000:80
+  app2:
     image: node:16.0.0-buster
     working_dir: /home/node/app
     user: '1000'
@@ -10,7 +16,7 @@ services:
         - 3000:3000
     volumes:
         - ./create-react-app/:/home/node/app
-  app2:
+  app3:
     image: node:16.0.0-buster
     working_dir: /home/node/app
     user: '1000'
